@@ -11,6 +11,17 @@ add_compile_options(
     -Wextra
 )
 
+add_executable(${CMAKE_PROJECT_NAME}
+    ${CMAKE_SOURCE_DIR}/settings.c
+    ${CMAKE_SOURCE_DIR}/utils/file.c
+)
+
+include_directories(
+    ${CMAKE_SOURCE_DIR}/utils
+    ${CMAKE_SOURCE_DIR}/deps/cJSON
+    ${CMAKE_SOURCE_DIR}/deps/raylib/src
+)
+
 add_subdirectory(${CMAKE_SOURCE_DIR}/deps/raylib)
 
 target_link_libraries(${CMAKE_PROJECT_NAME} PRIVATE raylib)

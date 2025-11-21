@@ -1,3 +1,5 @@
 .cache/
 build/*
 !build/settings.json
+!build/localization/
+compile_commands.json
