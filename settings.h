@@ -6,9 +6,9 @@
 typedef struct {
     int width, height;
     bool fullscreen;
-    char* language;
+    char *language;
 } Settings;
 
-int ReadSettings(Settings* settings);
+int ReadSettings(Settings *settings);
 
 #endif

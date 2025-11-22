@@ -12,8 +12,11 @@ add_compile_options(
 )
 
 add_executable(${CMAKE_PROJECT_NAME}
+    ${CMAKE_SOURCE_DIR}/main.c
+    ${CMAKE_SOURCE_DIR}/localization.generated.c
     ${CMAKE_SOURCE_DIR}/settings.c
     ${CMAKE_SOURCE_DIR}/utils/file.c
+    ${CMAKE_SOURCE_DIR}/deps/cJSON/cJSON.c
 )
 
 include_directories(

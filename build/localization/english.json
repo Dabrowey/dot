@@ -1,5 +1,6 @@
 {
-    "#NewGame": "New Game",
-    "#LoadGame": "Load Game",
-    "#Settings": "Settings"
+    "newgame": "New Game",
+    "loadgame": "Load Game",
+    "settings": "Settings",
+    "quitgame": "Quit Game"
 }
