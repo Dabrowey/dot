@@ -38,7 +38,7 @@ int ReadSettings(Settings *settings)
         {
             settings->fullscreen = false;
         }
-        settings->language = malloc(sizeof(char) * strlen(language->valuestring + 1));
+        settings->language = malloc(sizeof(char) * (strlen(language->valuestring) + 1));
         if (settings->language == NULL)
         {
             goto cleanup;
